@@ -1,0 +1,121 @@
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.services__list {
+  display: flex;
+  list-style-type: none;
+  width: 85%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: -5%;
+}
+.services__item {
+  width: 22%;
+  margin: 0 5%;
+  display: flex;
+  align-items: baseline;
+  margin-top: 5%;
+  align-items: center;
+}
+.services__title {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 10px;
+  color: #434343;
+  font-family: Quattrocento Sans;
+}
+
+/* Услуги */
+.services2 {
+  width: 100%;
+  display: flex;
+  grid: 1.5;
+  align-items: center;
+  margin-top: 3%;
+  background-color: #ebe9e6;
+}
+
+.services__list2 {
+  display: flex;
+  list-style-type: none;
+  width: 70%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* padding: 0; */
+}
+.services__item2 {
+  width: 75%;
+  margin: -3% 5%;
+  display: flex;
+  align-items: baseline;
+  /* margin-top: 1%; */
+  align-items: center;
+}
+.services__title2 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 10px;
+  color: #434343;
+  font-family: Quattrocento Sans;
+}
+
+.homePageImg:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
+
+/* adaptive */
+@media all and (max-width: 1024px) {
+  .services__list2 {
+    width: 54%;
+  }
+  .services__title2 {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 770px) {
+  .services__title {
+    font-size: 18px;
+  }
+  .services__list {
+    width: "100%";
+  }
+}
+
+@media all and (max-width: 578px) {
+  .services__title2 {
+    font-size: 18px;
+  }
+  /* .services {
+    flex-wrap: wrap;
+  } */
+}
+
+@media all and (max-width: 476px) {
+  .services__item {
+    width: 60%;
+  }
+  .services__icon {
+    width: 15%;
+  }
+  .bf {
+    height: 150px;
+  }
+  .photo_marque {
+    display: none;
+  }
+  .services__list2 {
+    width: 80%;
+  }
+}
