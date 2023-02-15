@@ -11,10 +11,13 @@ const HomePage = () => {
   const theme = createTheme({
     breakpoints: {
       values: {
-        xxs: 330,
+        xxs: 335,
         xs: 378,
-        sm: 427,
+        sm: 429,
+        n: 466,
         ssm: 490,
+        l: 495,
+        k: 535,
         mmd: 580,
         md: 770,
         xl: 918,
@@ -43,26 +46,28 @@ const HomePage = () => {
             height: "430px",
           },
           [theme.breakpoints.down("mmd")]: {
-            height: "325px",
+            height: "300px",
+          },
+          [theme.breakpoints.down("l")]: {
+            height: "278px",
+          },
+          [theme.breakpoints.down("ssm")]: {
+            height: "250px",
           },
           [theme.breakpoints.down("sm")]: {
-            height: "230px",
+            height: "220px",
           },
           [theme.breakpoints.down("xs")]: {
-            height: "210px",
+            height: "200px",
           },
           [theme.breakpoints.down("xxs")]: {
             height: "185px",
-          },
-          [theme.breakpoints.down("ssm")]: {
-            height: "245px",
           },
         }}
       >
         <Box
           sx={{
             display: "flex",
-            // justifyContent: "start",
             flexWrap: "wrap",
             width: "40%",
             [theme.breakpoints.down("lg")]: {
@@ -96,26 +101,38 @@ const HomePage = () => {
                 fontSize: "40px",
               },
               [theme.breakpoints.down("mmd")]: {
-                fontSize: "35px",
+                fontSize: "31px",
                 textAlign: "center",
                 mt: "25%",
-                ml: "30%",
+                ml: "36%",
               },
-              [theme.breakpoints.down("sm")]: {
+              [theme.breakpoints.down("k")]: {
                 fontSize: "28px",
-                ml: "16%",
+                textAlign: "center",
+                mt: "25%",
+                ml: "36%",
               },
-              [theme.breakpoints.down("xs")]: {
-                fontSize: "24px",
-                ml: "35%",
-              },
-              [theme.breakpoints.down("xxs")]: {
-                fontSize: "21px",
-                ml: "27%",
+              [theme.breakpoints.down("l")]: {
+                fontSize: "27px",
+                textAlign: "center",
+                mt: "25%",
+                ml: "36%",
               },
               [theme.breakpoints.down("ssm")]: {
                 fontSize: "24px",
-                ml: "16%",
+                ml: "12%",
+              },
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "24px",
+                ml: "9%",
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "21px",
+                ml: "10%",
+              },
+              [theme.breakpoints.down("xxs")]: {
+                fontSize: "20px",
+                ml: "9%",
               },
             }}
           >
@@ -137,6 +154,11 @@ const HomePage = () => {
                 mt: "10%",
                 ml: "40%",
               },
+              [theme.breakpoints.down("ssm")]: {
+                fontSize: "20px",
+                mt: "10%",
+                ml: "32%",
+              },
               [theme.breakpoints.down("sm")]: {
                 fontSize: "18px",
                 mt: "10%",
@@ -144,11 +166,7 @@ const HomePage = () => {
               },
               [theme.breakpoints.down("xxs")]: {
                 fontSize: "16px",
-                ml: "33%",
-              },
-              [theme.breakpoints.down("ssm")]: {
-                fontSize: "16px",
-                ml: "32%",
+                ml: "28%",
               },
             }}
           >
@@ -255,6 +273,65 @@ const HomePage = () => {
             </li>
           </ul>
         </div>
+      </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        <Box
+          sx={{
+            width: "15%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <img
+            width="140px"
+            className="shop_bag"
+            src="https://cdn-icons-png.flaticon.com/512/3514/3514254.png"
+            alt=""
+          />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            textAlign: "center",
+            width: "16%",
+            [theme.breakpoints.down("mmd")]: {
+              width: "25%",
+            },
+          }}
+        >
+          <Typography
+            data-aos="fade-down"
+            sx={{
+              fontSize: "25px",
+              fontWeight: "600",
+              color: "#434343",
+              fontFamily: "Quattrocento Sans",
+              alignSelf: "center",
+              [theme.breakpoints.down("xl")]: {
+                padding: "3%",
+              },
+              [theme.breakpoints.down("md")]: {
+                fontSize: "20px",
+              },
+              [theme.breakpoints.down("mmd")]: {
+                fontSize: "18px",
+              },
+              [theme.breakpoints.down("ssm")]: {
+                fontSize: "17px",
+              },
+            }}
+          >
+            Услуги байера +996500950029
+          </Typography>
+        </Box>
       </Box>
 
       <Box>
@@ -428,7 +505,7 @@ const HomePage = () => {
                 fontSize: "35px",
               },
               [theme.breakpoints.down("sm")]: {
-                fontSize: "30px",
+                fontSize: "26px",
                 mt: "3%",
               },
               [theme.breakpoints.down("xxs")]: {
@@ -493,7 +570,7 @@ const HomePage = () => {
           <WhatsAppIcon className="icons" sx={{ color: "#f6bd60" }} />
           <a
             style={{ textDecoration: "none", color: "#434343" }}
-            href="tel:+996700790112"
+            href=" https://wa.me/+996700790112"
           >
             +996 700 790 112
           </a>
@@ -506,7 +583,7 @@ const HomePage = () => {
               textDecoration: "none",
               color: "#434343",
             }}
-            href="tel:+996700790112"
+            href="https://telegram.me/+996700790112"
           >
             +996 700 790 112
           </a>
